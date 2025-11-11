@@ -11,9 +11,9 @@ import ProtectedRoute from './routes/ProtectedRoute';
 // Importação de páginas (ex: lazy loading)
 const Login = React.lazy(() => import('./pages/Login')); 
 const Dashboard = React.lazy(() => import('./pages/Dashboard')); 
-// const Alunos = React.lazy(() => import('./pages/Alunos'));
-// const Turmas = React.lazy(() => import('./pages/Turmas'));
-// const Avaliacoes = React.lazy(() => import('./pages/Avaliacoes'));
+const Alunos = React.lazy(() => import('./pages/Alunos'));
+const Turmas = React.lazy(() => import('./pages/Turmas'));
+const Avaliacoes = React.lazy(() => import('./pages/Avaliacoes'));
 
 /**
  * @component AppRoutes
@@ -37,9 +37,9 @@ const AppRoutes: React.FC = () => {
                 {/* Rotas Protegidas */}
                 <Route element={<ProtectedRoute />}>
                     <Route path="/dashboard" element={<Dashboard />} />
-                    {/* <Route path="/alunos" element={<Alunos />} /> */}
-                    {/* <Route path="/turmas" element={<Turmas />} /> */}
-                    {/* <Route path="/avaliacoes" element={<Avaliacoes />} /> */}
+                    { <Route path="/alunos" element={<Alunos />} /> }
+                    { <Route path="/turmas" element={<Turmas />} /> }/
+                    { <Route path="/avaliacoes" element={<Avaliacoes />} /> }
                 </Route>
 
                 {/* Rota Padrão */}
