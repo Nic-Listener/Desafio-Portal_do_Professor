@@ -24,9 +24,6 @@ const Dashboard: React.FC = () => {
                     <h1>Sistema de Gestão</h1>
                     <div className="user-info">
                         <span className="user-name">{user?.name}</span>
-                        <button onClick={handleLogout} className="logout-button">
-                            Sair
-                        </button>
                     </div>
                 </div>
             </header>

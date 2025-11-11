@@ -65,7 +65,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                         Portal do Professor
                     </Typography>
                     <Button color="inherit" onClick={handleLogout}>
-                        Logout
+                        SAIR
                     </Button>
                 </Toolbar>
             </AppBar>
