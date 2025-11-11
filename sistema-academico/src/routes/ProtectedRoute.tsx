@@ -1,8 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-// Supondo que existe um layout principal com sidebar/header
-// import MainLayout from '../layouts/MainLayout';
+import MainLayout from '../layouts/MainLayout';
 
 /**
  * @component ProtectedRoute
@@ -18,14 +17,11 @@ const ProtectedRoute: React.FC = () => {
     }
 
     // Opcional: Envolver rotas protegidas em um layout principal
-    // return (
-    //     <MainLayout>
-    //         <Outlet />
-    //     </MainLayout>
-    // );
-
-    // Versão simples: apenas renderiza o componente filho (página)
-    return <Outlet />;
-};
-
-export default ProtectedRoute;
+        return (
+            <MainLayout>
+                <Outlet />
+            </MainLayout>
+    );
+ };
+ 
+ export default ProtectedRoute;
