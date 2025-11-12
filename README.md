@@ -28,7 +28,7 @@ Siga os passos abaixo para configurar e executar o projeto localmente.
 1.  **Clone o repositório:**
     ```bash
     git clone [URL_DO_REPOSITORIO]
-    cd portal-professor
+    cd sistema-academico/
     ```
 
 2.  **Instale as dependências:**
